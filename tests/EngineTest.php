@@ -8,26 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class EngineTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
-    public function test_tokenize()
-    {
-        $expression = "2.5*total_market1*market_share2*selling_price.average";
-        $values = [
-            "total_market1" => 100,
-            "market_share2" => 0.23,
-            "selling_price" => [100, 200, 300]
-
-        ];
-        $engine = new Engine();
-
-        $this->assertEquals( ["2.5", "*", "total_market1", "*", "market_share2", "*", "selling_price", ".average"], $engine->tokenize($expression));
-    }
-
-
+   
     /**
      * Example test.
      *
