@@ -18,13 +18,15 @@ class Engine
         
         // calculate stack value
         while (!$stack->isEmpty() && ($operator = $stack->pop()) && $operator->isOperator()) {
-            // calculate operation value and push its result back to the stack
-            $value = $operator->operate($stack);
+            // calculate operator value and push its result back to the stack            
+            $value = $operator->operate($stack);            
+            
             if (!is_null($value)) {
                 $stack->push(Expression::factory($value));
             }
         }
-
+        
+        // if expression instance is left on stack return its value, else render as string
         return $operator ? $operator->render() : $this->render($stack);
     }
 
