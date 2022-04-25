@@ -2,6 +2,8 @@
 
 namespace Stankic\Evaluator\Tests;
 
+require_once('vendor/autoload.php');
+
 use Stankic\Evaluator\Engine;
 
 use PHPUnit\Framework\TestCase;
