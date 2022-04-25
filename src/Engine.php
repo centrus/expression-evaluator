@@ -1,11 +1,5 @@
 <?php
 
-/* 
-Inspired by & developed upon iSerter/expression-evaluator
-https://github.com/iSerter/expression-evaluator
-
-*/
-
 namespace Stankic\Evaluator;
 
 class Engine
