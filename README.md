@@ -8,7 +8,7 @@ composer install
 ```
 
 ## Run Test file
-./vendor/bin/phpunit.bat tests/EngineTest.php
+vendor\bin\phpunit.bat tests/EngineTest.php
 
 ## Example usage
 ```php
