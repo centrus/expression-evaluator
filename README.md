@@ -1,6 +1,6 @@
 Inspired by & developed upon iSerter/expression-evaluator https://github.com/iSerter/expression-evaluator
 
-## Instalation
+## Installation
 ```bash
 git clone https://github.com/centrus/expression-evaluator.git
 cd expression-evaluator/
