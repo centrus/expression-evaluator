@@ -28,31 +28,6 @@ class EngineTest extends TestCase
     }
 
 
-    // public function test_assign_variables()
-    // {
-
-    //     $expression = "2.5*total_market*market_share*selling_price.average";
-    //     $values = [
-    //         "total_market" => 100,
-    //         "market_share" => 0.23,
-    //         "selling_price" => [100, 200, 300]
-
-    //     ];
-    //     $engine = new Engine();
-    //     $engine->setVariables($values);
-
-    //     $tokens = $engine->tokenize($expression);
-
-    //     $variables = [];
-
-    //     foreach ($tokens as $token) {
-    //         $variables[] = $engine->assignVariables($token);
-    //     }
-
-    //     $this->assertEquals(["2.5", "*", 100, "*", 0.23, "*", [100, 200, 300], ".average"], $variables);
-    // }
-
-
     /**
      * Example test.
      *
