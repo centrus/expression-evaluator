@@ -1,5 +1,16 @@
 Inspired by & developed upon iSerter/expression-evaluator https://github.com/iSerter/expression-evaluator
 
+## Instalation
+```bash
+git clone https://github.com/centrus/expression-evaluator.git
+cd expression-evaluator/
+composer install
+```
+
+## Run Test file
+./vendor/bin/phpunit.bat tests/EngineTest.php
+
+## Example usage
 ```php
 $engine = new Stankic\Evaluator\Engine();
 
