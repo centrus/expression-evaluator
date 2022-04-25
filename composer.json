@@ -20,9 +20,8 @@
         }
     },
     "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Stankic\\Evaluator\\": "packages/stankic/evaluator/src"
+        "psr-4": {          
+            "Stankic\\Evaluator\\": "src/"
         }
     }
 }
