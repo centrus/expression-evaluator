@@ -25,7 +25,7 @@ class Engine
                 $stack->push(Expression::factory($value));
             }
         }
-        
+
         // if expression instance is left on stack return its value, else render as string
         return $operator ? $operator->render() : $this->render($stack);
     }
@@ -37,6 +37,11 @@ class Engine
         $parts = preg_split('/(\.[a-zA-Z]+|\+|-|\(|\)|\*|\/)|\s+/', $string, null, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
         //print_r($parts);    
         return $parts;
+    }
+
+    public function setVariables(array $values)
+    {
+        $this->variables = $values;
     }
 
 
@@ -74,14 +79,9 @@ class Engine
         }
 
         return $output;
-    }
+    }    
 
-    public function setVariables(array $values)
-    {
-        $this->variables = $values;
-    }
-
-    public function assignVariables($token)
+    protected function assignVariables($token)
     {
         // If token is a word not starting with .(reserved for array operations) or digit asign value from values array
         // This could be improved by adding support if to access speciffic element in values array but this feature is out of scope
